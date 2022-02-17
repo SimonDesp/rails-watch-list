@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+require 'faker'
+
+puts 'Creating 100 fake restaurants...'
+100.times do
+  movie = Movie.new(
+    :title
+    :overview
+    :poster_url
+    :rating rand(0..10).float 
+  )
+  restaurant.save!
+end
+puts 'Finished!'
